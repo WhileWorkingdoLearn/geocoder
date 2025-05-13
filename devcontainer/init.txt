@@ -1,0 +1,68 @@
+-- 1. Temporäre Rohdatentabelle für TSV-Import
+CREATE TABLE IF NOT EXISTS raw_addresses (
+    postal_code    TEXT,
+    city           TEXT,
+    street         TEXT,
+    house_number   TEXT,
+    x              DOUBLE PRECISION,
+    y              DOUBLE PRECISION,
+    country        CHAR(2)
+);
+
+-- 2. Haupttabellen
+CREATE TABLE IF NOT EXISTS cities (
+    id       SERIAL PRIMARY KEY,
+    name     TEXT NOT NULL,
+    country  CHAR(2) NOT NULL,
+    UNIQUE(name, country)
+);
+
+CREATE TABLE IF NOT EXISTS streets (
+    id       SERIAL PRIMARY KEY,
+    name     TEXT NOT NULL,
+    city_id  INT NOT NULL REFERENCES cities(id),
+    UNIQUE(name, city_id)
+);
+
+CREATE TABLE IF NOT EXISTS addresses (
+    id            SERIAL PRIMARY KEY,
+    street_id     INT NOT NULL REFERENCES streets(id),
+    house_number  TEXT,
+    postal_code   TEXT,
+    x             DOUBLE PRECISION,
+    y             DOUBLE PRECISION,
+    geom          GEOGRAPHY(Point, 4326) GENERATED ALWAYS AS (
+        ST_SetSRID(ST_MakePoint(x, y), 4326)::geography
+    ) STORED
+);
+
+-- 3. Lade TSV-Datei (auszuführen via psql)
+-- \copy raw_addresses FROM 'your_file.tsv' WITH (FORMAT csv, DELIMITER E'	', HEADER true, NULL '');
+
+-- 4. Städte importieren
+INSERT INTO cities (name, country)
+SELECT DISTINCT city, country
+FROM raw_addresses
+WHERE city IS NOT NULL AND country IS NOT NULL
+ON CONFLICT DO NOTHING;
+
+-- 5. Straßen importieren
+INSERT INTO streets (name, city_id)
+SELECT DISTINCT r.street, c.id
+FROM raw_addresses r
+JOIN cities c ON c.name = r.city AND c.country = r.country
+WHERE r.street IS NOT NULL
+ON CONFLICT DO NOTHING;
+
+-- 6. Adressen importieren
+INSERT INTO addresses (street_id, house_number, postal_code, x, y)
+SELECT s.id, r.house_number, r.postal_code, r.x, r.y
+FROM raw_addresses r
+JOIN cities c ON c.name = r.city AND c.country = r.country
+JOIN streets s ON s.name = r.street AND s.city_id = c.id;
+
+-- 7. Optional: temporäre Tabelle löschen
+-- DROP TABLE raw_addresses;
+
+\copy raw_addresses FROM 'your_file.tsv' WITH (FORMAT csv, DELIMITER E'\t', HEADER true, NULL '');
+

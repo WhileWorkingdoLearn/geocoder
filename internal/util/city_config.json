@@ -1,0 +1,1932 @@
+{
+  "cities": [
+    {
+      "name": "dhaka",
+      "country": "BD",
+      "coordinates": [
+        23.43,
+        90.24
+      ]
+    },
+    {
+      "name": "brussels",
+      "country": "BE",
+      "coordinates": [
+        50.5,
+        4.2
+      ]
+    },
+    {
+      "name": "ouagadougou",
+      "country": "BF",
+      "coordinates": [
+        12.22,
+        -1.31
+      ]
+    },
+    {
+      "name": "sofia",
+      "country": "BG",
+      "coordinates": [
+        42.41,
+        23.19
+      ]
+    },
+    {
+      "name": "sarajevo",
+      "country": "BA",
+      "coordinates": [
+        43.52,
+        18.25
+      ]
+    },
+    {
+      "name": "bridgetown",
+      "country": "BB",
+      "coordinates": [
+        13.06,
+        -59.37
+      ]
+    },
+    {
+      "name": "mata-utu",
+      "country": "WF",
+      "coordinates": [
+        -13.57,
+        -171.56
+      ]
+    },
+    {
+      "name": "gustavia",
+      "country": "BL",
+      "coordinates": [
+        17.53,
+        -62.51
+      ]
+    },
+    {
+      "name": "hamilton",
+      "country": "BM",
+      "coordinates": [
+        32.17,
+        -64.47
+      ]
+    },
+    {
+      "name": "bandar seri begawan",
+      "country": "BN",
+      "coordinates": [
+        4.53,
+        114.56
+      ]
+    },
+    {
+      "name": "la paz",
+      "country": "BO",
+      "coordinates": [
+        -16.3,
+        -68.09
+      ]
+    },
+    {
+      "name": "manama",
+      "country": "BH",
+      "coordinates": [
+        26.14,
+        50.34
+      ]
+    },
+    {
+      "name": "bujumbura",
+      "country": "BI",
+      "coordinates": [
+        -3.22,
+        29.21
+      ]
+    },
+    {
+      "name": "porto-novo",
+      "country": "BJ",
+      "coordinates": [
+        6.29,
+        2.37
+      ]
+    },
+    {
+      "name": "thimphu",
+      "country": "BT",
+      "coordinates": [
+        27.29,
+        89.36
+      ]
+    },
+    {
+      "name": "kingston",
+      "country": "JM",
+      "coordinates": [
+        18,
+        -76.48
+      ]
+    },
+    {
+      "name": "",
+      "country": "BV",
+      "coordinates": [
+        -54.26,
+        3.24
+      ]
+    },
+    {
+      "name": "gaborone",
+      "country": "BW",
+      "coordinates": [
+        -24.45,
+        25.55
+      ]
+    },
+    {
+      "name": "apia",
+      "country": "WS",
+      "coordinates": [
+        -13.5,
+        -171.44
+      ]
+    },
+    {
+      "name": "brasilia",
+      "country": "BR",
+      "coordinates": [
+        -15.47,
+        -47.55
+      ]
+    },
+    {
+      "name": "nassau",
+      "country": "BS",
+      "coordinates": [
+        25.05,
+        -77.21
+      ]
+    },
+    {
+      "name": "saint helier",
+      "country": "JE",
+      "coordinates": [
+        49.11,
+        -2.06
+      ]
+    },
+    {
+      "name": "minsk",
+      "country": "BY",
+      "coordinates": [
+        53.54,
+        27.34
+      ]
+    },
+    {
+      "name": "belmopan",
+      "country": "BZ",
+      "coordinates": [
+        17.15,
+        -88.46
+      ]
+    },
+    {
+      "name": "moscow",
+      "country": "RU",
+      "coordinates": [
+        55.45,
+        37.35
+      ]
+    },
+    {
+      "name": "kigali",
+      "country": "RW",
+      "coordinates": [
+        -1.57,
+        30.04
+      ]
+    },
+    {
+      "name": "belgrade",
+      "country": "RS",
+      "coordinates": [
+        44.5,
+        20.3
+      ]
+    },
+    {
+      "name": "dili",
+      "country": "TL",
+      "coordinates": [
+        -8.35,
+        125.36
+      ]
+    },
+    {
+      "name": "ashgabat",
+      "country": "TM",
+      "coordinates": [
+        37.57,
+        58.23
+      ]
+    },
+    {
+      "name": "dushanbe",
+      "country": "TJ",
+      "coordinates": [
+        38.35,
+        68.48
+      ]
+    },
+    {
+      "name": "bucharest",
+      "country": "RO",
+      "coordinates": [
+        44.26,
+        26.06
+      ]
+    },
+    {
+      "name": "",
+      "country": "TK",
+      "coordinates": [
+        -9,
+        -172
+      ]
+    },
+    {
+      "name": "bissau",
+      "country": "GW",
+      "coordinates": [
+        11.51,
+        -15.35
+      ]
+    },
+    {
+      "name": "hagatna",
+      "country": "GU",
+      "coordinates": [
+        13.28,
+        144.44
+      ]
+    },
+    {
+      "name": "guatemala city",
+      "country": "GT",
+      "coordinates": [
+        14.37,
+        -90.31
+      ]
+    },
+    {
+      "name": "athens",
+      "country": "GR",
+      "coordinates": [
+        37.59,
+        23.44
+      ]
+    },
+    {
+      "name": "malabo",
+      "country": "GQ",
+      "coordinates": [
+        3.45,
+        8.47
+      ]
+    },
+    {
+      "name": "tokyo",
+      "country": "JP",
+      "coordinates": [
+        35.41,
+        139.45
+      ]
+    },
+    {
+      "name": "georgetown",
+      "country": "GY",
+      "coordinates": [
+        6.48,
+        -58.1
+      ]
+    },
+    {
+      "name": "saint peter port",
+      "country": "GG",
+      "coordinates": [
+        49.27,
+        -2.32
+      ]
+    },
+    {
+      "name": "t'bilisi",
+      "country": "GE",
+      "coordinates": [
+        41.43,
+        44.47
+      ]
+    },
+    {
+      "name": "saint george's",
+      "country": "GD",
+      "coordinates": [
+        12.03,
+        -61.45
+      ]
+    },
+    {
+      "name": "london",
+      "country": "GB",
+      "coordinates": [
+        51.3,
+        -0.1
+      ]
+    },
+    {
+      "name": "libreville",
+      "country": "GA",
+      "coordinates": [
+        0.23,
+        9.27
+      ]
+    },
+    {
+      "name": "san salvador",
+      "country": "SV",
+      "coordinates": [
+        13.42,
+        -89.12
+      ]
+    },
+    {
+      "name": "conakry",
+      "country": "GN",
+      "coordinates": [
+        9.33,
+        -13.42
+      ]
+    },
+    {
+      "name": "banjul",
+      "country": "GM",
+      "coordinates": [
+        13.27,
+        -16.34
+      ]
+    },
+    {
+      "name": "nuuk",
+      "country": "GL",
+      "coordinates": [
+        64.11,
+        -51.45
+      ]
+    },
+    {
+      "name": "gibraltar",
+      "country": "GI",
+      "coordinates": [
+        36.08,
+        -5.21
+      ]
+    },
+    {
+      "name": "accra",
+      "country": "GH",
+      "coordinates": [
+        5.33,
+        -0.13
+      ]
+    },
+    {
+      "name": "muscat",
+      "country": "OM",
+      "coordinates": [
+        23.37,
+        58.35
+      ]
+    },
+    {
+      "name": "tunis",
+      "country": "TN",
+      "coordinates": [
+        36.48,
+        10.11
+      ]
+    },
+    {
+      "name": "amman",
+      "country": "JO",
+      "coordinates": [
+        31.57,
+        35.56
+      ]
+    },
+    {
+      "name": "zagreb",
+      "country": "HR",
+      "coordinates": [
+        45.48,
+        16
+      ]
+    },
+    {
+      "name": "port-au-prince",
+      "country": "HT",
+      "coordinates": [
+        18.32,
+        -72.2
+      ]
+    },
+    {
+      "name": "budapest",
+      "country": "HU",
+      "coordinates": [
+        47.3,
+        19.05
+      ]
+    },
+    {
+      "name": "hong kong",
+      "country": "HK",
+      "coordinates": [
+        22.15,
+        114.1
+      ]
+    },
+    {
+      "name": "tegucigalpa",
+      "country": "HN",
+      "coordinates": [
+        14.06,
+        -87.13
+      ]
+    },
+    {
+      "name": "",
+      "country": "HM",
+      "coordinates": [
+        -53.06,
+        72.31
+      ]
+    },
+    {
+      "name": "caracas",
+      "country": "VE",
+      "coordinates": [
+        10.3,
+        -66.56
+      ]
+    },
+    {
+      "name": "san juan",
+      "country": "PR",
+      "coordinates": [
+        18.28,
+        -66.07
+      ]
+    },
+    {
+      "name": "",
+      "country": "PS",
+      "coordinates": [
+        31.25,
+        34.2
+      ]
+    },
+    {
+      "name": "melekeok",
+      "country": "PW",
+      "coordinates": [
+        7.29,
+        134.38
+      ]
+    },
+    {
+      "name": "lisbon",
+      "country": "PT",
+      "coordinates": [
+        38.43,
+        -9.08
+      ]
+    },
+    {
+      "name": "longyearbyen",
+      "country": "SJ",
+      "coordinates": [
+        78.13,
+        15.33
+      ]
+    },
+    {
+      "name": "asuncion",
+      "country": "PY",
+      "coordinates": [
+        -25.16,
+        -57.4
+      ]
+    },
+    {
+      "name": "baghdad",
+      "country": "IQ",
+      "coordinates": [
+        33.2,
+        44.23
+      ]
+    },
+    {
+      "name": "panama city",
+      "country": "PA",
+      "coordinates": [
+        8.58,
+        -79.32
+      ]
+    },
+    {
+      "name": "papeete",
+      "country": "PF",
+      "coordinates": [
+        -17.32,
+        -149.34
+      ]
+    },
+    {
+      "name": "port moresby",
+      "country": "PG",
+      "coordinates": [
+        -9.3,
+        147.1
+      ]
+    },
+    {
+      "name": "lima",
+      "country": "PE",
+      "coordinates": [
+        -12.03,
+        -77.03
+      ]
+    },
+    {
+      "name": "islamabad",
+      "country": "PK",
+      "coordinates": [
+        33.42,
+        73.1
+      ]
+    },
+    {
+      "name": "manila",
+      "country": "PH",
+      "coordinates": [
+        14.35,
+        121
+      ]
+    },
+    {
+      "name": "adamstown",
+      "country": "PN",
+      "coordinates": [
+        -25.04,
+        -130.05
+      ]
+    },
+    {
+      "name": "warsaw",
+      "country": "PL",
+      "coordinates": [
+        52.15,
+        21
+      ]
+    },
+    {
+      "name": "saint-pierre",
+      "country": "PM",
+      "coordinates": [
+        46.46,
+        -56.11
+      ]
+    },
+    {
+      "name": "lusaka",
+      "country": "ZM",
+      "coordinates": [
+        -15.25,
+        28.17
+      ]
+    },
+    {
+      "name": "",
+      "country": "EH",
+      "coordinates": [
+        24.3,
+        -13
+      ]
+    },
+    {
+      "name": "tallinn",
+      "country": "EE",
+      "coordinates": [
+        59.26,
+        24.43
+      ]
+    },
+    {
+      "name": "cairo",
+      "country": "EG",
+      "coordinates": [
+        30.03,
+        31.15
+      ]
+    },
+    {
+      "name": "pretoria",
+      "country": "ZA",
+      "coordinates": [
+        -25.42,
+        28.13
+      ]
+    },
+    {
+      "name": "quito",
+      "country": "EC",
+      "coordinates": [
+        -0.13,
+        -78.3
+      ]
+    },
+    {
+      "name": "rome",
+      "country": "IT",
+      "coordinates": [
+        41.54,
+        12.29
+      ]
+    },
+    {
+      "name": "hanoi",
+      "country": "VN",
+      "coordinates": [
+        21.02,
+        105.51
+      ]
+    },
+    {
+      "name": "honiara",
+      "country": "SB",
+      "coordinates": [
+        -9.26,
+        159.57
+      ]
+    },
+    {
+      "name": "",
+      "country": "EU",
+      "coordinates": [
+        50.1021,
+        9.9
+      ]
+    },
+    {
+      "name": "addis ababa",
+      "country": "ET",
+      "coordinates": [
+        9.02,
+        38.42
+      ]
+    },
+    {
+      "name": "mogadishu",
+      "country": "SO",
+      "coordinates": [
+        2.04,
+        45.22
+      ]
+    },
+    {
+      "name": "harare",
+      "country": "ZW",
+      "coordinates": [
+        -17.5,
+        31.03
+      ]
+    },
+    {
+      "name": "riyadh",
+      "country": "SA",
+      "coordinates": [
+        24.38,
+        46.43
+      ]
+    },
+    {
+      "name": "madrid",
+      "country": "ES",
+      "coordinates": [
+        40.24,
+        -3.41
+      ]
+    },
+    {
+      "name": "asmara",
+      "country": "ER",
+      "coordinates": [
+        15.2,
+        38.56
+      ]
+    },
+    {
+      "name": "podgorica",
+      "country": "ME",
+      "coordinates": [
+        42.26,
+        19.16
+      ]
+    },
+    {
+      "name": "chisinau",
+      "country": "MD",
+      "coordinates": [
+        47,
+        28.51
+      ]
+    },
+    {
+      "name": "antananarivo",
+      "country": "MG",
+      "coordinates": [
+        -18.55,
+        47.31
+      ]
+    },
+    {
+      "name": "marigot",
+      "country": "MF",
+      "coordinates": [
+        18.04,
+        -63.05
+      ]
+    },
+    {
+      "name": "rabat",
+      "country": "MA",
+      "coordinates": [
+        34.01,
+        -6.49
+      ]
+    },
+    {
+      "name": "monaco",
+      "country": "MC",
+      "coordinates": [
+        43.44,
+        7.25
+      ]
+    },
+    {
+      "name": "tashkent",
+      "country": "UZ",
+      "coordinates": [
+        41.2,
+        69.18
+      ]
+    },
+    {
+      "name": "rangoon",
+      "country": "MM",
+      "coordinates": [
+        16.48,
+        96.09
+      ]
+    },
+    {
+      "name": "bamako",
+      "country": "ML",
+      "coordinates": [
+        12.39,
+        -8
+      ]
+    },
+    {
+      "name": "",
+      "country": "MO",
+      "coordinates": [
+        22.1,
+        113.33
+      ]
+    },
+    {
+      "name": "ulaanbaatar",
+      "country": "MN",
+      "coordinates": [
+        47.55,
+        106.55
+      ]
+    },
+    {
+      "name": "majuro",
+      "country": "MH",
+      "coordinates": [
+        7.06,
+        171.23
+      ]
+    },
+    {
+      "name": "skopje",
+      "country": "MK",
+      "coordinates": [
+        42,
+        21.26
+      ]
+    },
+    {
+      "name": "port louis",
+      "country": "MU",
+      "coordinates": [
+        -20.09,
+        57.29
+      ]
+    },
+    {
+      "name": "valletta",
+      "country": "MT",
+      "coordinates": [
+        35.53,
+        14.3
+      ]
+    },
+    {
+      "name": "lilongwe",
+      "country": "MW",
+      "coordinates": [
+        -13.59,
+        33.47
+      ]
+    },
+    {
+      "name": "male",
+      "country": "MV",
+      "coordinates": [
+        4.1,
+        73.3
+      ]
+    },
+    {
+      "name": "saipan",
+      "country": "MP",
+      "coordinates": [
+        15.12,
+        145.45
+      ]
+    },
+    {
+      "name": "plymouth",
+      "country": "MS",
+      "coordinates": [
+        16.42,
+        -62.13
+      ]
+    },
+    {
+      "name": "nouakchott",
+      "country": "MR",
+      "coordinates": [
+        18.07,
+        -16.02
+      ]
+    },
+    {
+      "name": "douglas",
+      "country": "IM",
+      "coordinates": [
+        54.09,
+        -4.29
+      ]
+    },
+    {
+      "name": "kampala",
+      "country": "UG",
+      "coordinates": [
+        0.19,
+        32.25
+      ]
+    },
+    {
+      "name": "kuala lumpur",
+      "country": "MY",
+      "coordinates": [
+        3.1,
+        101.42
+      ]
+    },
+    {
+      "name": "mexico city",
+      "country": "MX",
+      "coordinates": [
+        19.26,
+        -99.08
+      ]
+    },
+    {
+      "name": "jerusalem",
+      "country": "IL",
+      "coordinates": [
+        31.46,
+        35.14
+      ]
+    },
+    {
+      "name": "paris",
+      "country": "FR",
+      "coordinates": [
+        48.52,
+        2.2
+      ]
+    },
+    {
+      "name": "",
+      "country": "IO",
+      "coordinates": [
+        -6,
+        71.3
+      ]
+    },
+    {
+      "name": "jamestown",
+      "country": "SH",
+      "coordinates": [
+        -15.56,
+        -5.44
+      ]
+    },
+    {
+      "name": "helsinki",
+      "country": "FI",
+      "coordinates": [
+        60.1,
+        24.56
+      ]
+    },
+    {
+      "name": "suva",
+      "country": "FJ",
+      "coordinates": [
+        -18.08,
+        178.25
+      ]
+    },
+    {
+      "name": "stanley",
+      "country": "FK",
+      "coordinates": [
+        -51.42,
+        -57.51
+      ]
+    },
+    {
+      "name": "palikir",
+      "country": "FM",
+      "coordinates": [
+        6.55,
+        158.09
+      ]
+    },
+    {
+      "name": "torshavn",
+      "country": "FO",
+      "coordinates": [
+        62.01,
+        -6.46
+      ]
+    },
+    {
+      "name": "managua",
+      "country": "NI",
+      "coordinates": [
+        12.09,
+        -86.17
+      ]
+    },
+    {
+      "name": "amsterdam",
+      "country": "NL",
+      "coordinates": [
+        52.23,
+        4.54
+      ]
+    },
+    {
+      "name": "oslo",
+      "country": "NO",
+      "coordinates": [
+        59.55,
+        10.45
+      ]
+    },
+    {
+      "name": "windhoek",
+      "country": "NA",
+      "coordinates": [
+        -22.34,
+        17.05
+      ]
+    },
+    {
+      "name": "port-vila",
+      "country": "VU",
+      "coordinates": [
+        -17.44,
+        168.19
+      ]
+    },
+    {
+      "name": "noumea",
+      "country": "NC",
+      "coordinates": [
+        -22.16,
+        166.27
+      ]
+    },
+    {
+      "name": "niamey",
+      "country": "NE",
+      "coordinates": [
+        13.31,
+        2.07
+      ]
+    },
+    {
+      "name": "kingston",
+      "country": "NF",
+      "coordinates": [
+        -29.03,
+        167.58
+      ]
+    },
+    {
+      "name": "abuja",
+      "country": "NG",
+      "coordinates": [
+        9.05,
+        7.32
+      ]
+    },
+    {
+      "name": "wellington",
+      "country": "NZ",
+      "coordinates": [
+        -41.28,
+        174.51
+      ]
+    },
+    {
+      "name": "kathmandu",
+      "country": "NP",
+      "coordinates": [
+        27.43,
+        85.19
+      ]
+    },
+    {
+      "name": "",
+      "country": "NR",
+      "coordinates": [
+        -0.32,
+        166.55
+      ]
+    },
+    {
+      "name": "alofi",
+      "country": "NU",
+      "coordinates": [
+        -19.01,
+        -169.55
+      ]
+    },
+    {
+      "name": "avarua",
+      "country": "CK",
+      "coordinates": [
+        -21.12,
+        -159.46
+      ]
+    },
+    {
+      "name": "yamoussoukro",
+      "country": "CI",
+      "coordinates": [
+        6.49,
+        -5.17
+      ]
+    },
+    {
+      "name": "bern",
+      "country": "CH",
+      "coordinates": [
+        46.57,
+        7.26
+      ]
+    },
+    {
+      "name": "bogota",
+      "country": "CO",
+      "coordinates": [
+        4.36,
+        -74.05
+      ]
+    },
+    {
+      "name": "beijing",
+      "country": "CN",
+      "coordinates": [
+        39.55,
+        116.23
+      ]
+    },
+    {
+      "name": "yaounde",
+      "country": "CM",
+      "coordinates": [
+        3.52,
+        11.31
+      ]
+    },
+    {
+      "name": "santiago",
+      "country": "CL",
+      "coordinates": [
+        -33.27,
+        -70.4
+      ]
+    },
+    {
+      "name": "west island",
+      "country": "CC",
+      "coordinates": [
+        -12.1,
+        96.5
+      ]
+    },
+    {
+      "name": "ottawa",
+      "country": "CA",
+      "coordinates": [
+        45.25,
+        -75.42
+      ]
+    },
+    {
+      "name": "brazzaville",
+      "country": "CG",
+      "coordinates": [
+        -4.15,
+        15.17
+      ]
+    },
+    {
+      "name": "bangui",
+      "country": "CF",
+      "coordinates": [
+        4.22,
+        18.35
+      ]
+    },
+    {
+      "name": "kinshasa",
+      "country": "CD",
+      "coordinates": [
+        -4.19,
+        15.18
+      ]
+    },
+    {
+      "name": "prague",
+      "country": "CZ",
+      "coordinates": [
+        50.05,
+        14.28
+      ]
+    },
+    {
+      "name": "nicosia",
+      "country": "CY",
+      "coordinates": [
+        35.1,
+        33.22
+      ]
+    },
+    {
+      "name": "the settlement",
+      "country": "CX",
+      "coordinates": [
+        -10.25,
+        105.43
+      ]
+    },
+    {
+      "name": "san jose",
+      "country": "CR",
+      "coordinates": [
+        9.56,
+        -84.05
+      ]
+    },
+    {
+      "name": "praia",
+      "country": "CV",
+      "coordinates": [
+        14.55,
+        -23.31
+      ]
+    },
+    {
+      "name": "havana",
+      "country": "CU",
+      "coordinates": [
+        23.07,
+        -82.21
+      ]
+    },
+    {
+      "name": "mbabane",
+      "country": "SZ",
+      "coordinates": [
+        -26.18,
+        31.06
+      ]
+    },
+    {
+      "name": "damascus",
+      "country": "SY",
+      "coordinates": [
+        33.3,
+        36.18
+      ]
+    },
+    {
+      "name": "bishkek",
+      "country": "KG",
+      "coordinates": [
+        42.52,
+        74.36
+      ]
+    },
+    {
+      "name": "nairobi",
+      "country": "KE",
+      "coordinates": [
+        -1.17,
+        36.49
+      ]
+    },
+    {
+      "name": "paramaribo",
+      "country": "SR",
+      "coordinates": [
+        5.5,
+        -55.1
+      ]
+    },
+    {
+      "name": "tarawa",
+      "country": "KI",
+      "coordinates": [
+        1.19,
+        172.58
+      ]
+    },
+    {
+      "name": "phnom penh",
+      "country": "KH",
+      "coordinates": [
+        11.33,
+        104.55
+      ]
+    },
+    {
+      "name": "basseterre",
+      "country": "KN",
+      "coordinates": [
+        17.18,
+        -62.43
+      ]
+    },
+    {
+      "name": "moroni",
+      "country": "KM",
+      "coordinates": [
+        -11.42,
+        43.14
+      ]
+    },
+    {
+      "name": "sao tome",
+      "country": "ST",
+      "coordinates": [
+        0.12,
+        6.39
+      ]
+    },
+    {
+      "name": "bratislava",
+      "country": "SK",
+      "coordinates": [
+        48.09,
+        17.07
+      ]
+    },
+    {
+      "name": "seoul",
+      "country": "KR",
+      "coordinates": [
+        37.33,
+        126.59
+      ]
+    },
+    {
+      "name": "ljubljana",
+      "country": "SI",
+      "coordinates": [
+        46.03,
+        14.31
+      ]
+    },
+    {
+      "name": "pyongyang",
+      "country": "KP",
+      "coordinates": [
+        39.01,
+        125.45
+      ]
+    },
+    {
+      "name": "kuwait city",
+      "country": "KW",
+      "coordinates": [
+        29.22,
+        47.58
+      ]
+    },
+    {
+      "name": "dakar",
+      "country": "SN",
+      "coordinates": [
+        14.4,
+        -17.26
+      ]
+    },
+    {
+      "name": "san marino",
+      "country": "SM",
+      "coordinates": [
+        43.56,
+        12.25
+      ]
+    },
+    {
+      "name": "freetown",
+      "country": "SL",
+      "coordinates": [
+        8.3,
+        -13.15
+      ]
+    },
+    {
+      "name": "victoria",
+      "country": "SC",
+      "coordinates": [
+        -4.38,
+        55.27
+      ]
+    },
+    {
+      "name": "astana",
+      "country": "KZ",
+      "coordinates": [
+        51.1,
+        71.25
+      ]
+    },
+    {
+      "name": "george town",
+      "country": "KY",
+      "coordinates": [
+        19.18,
+        -81.23
+      ]
+    },
+    {
+      "name": "singapore",
+      "country": "SG",
+      "coordinates": [
+        1.17,
+        103.51
+      ]
+    },
+    {
+      "name": "stockholm",
+      "country": "SE",
+      "coordinates": [
+        59.2,
+        18.03
+      ]
+    },
+    {
+      "name": "khartoum",
+      "country": "SD",
+      "coordinates": [
+        15.36,
+        32.32
+      ]
+    },
+    {
+      "name": "santo domingo",
+      "country": "DO",
+      "coordinates": [
+        18.28,
+        -69.54
+      ]
+    },
+    {
+      "name": "roseau",
+      "country": "DM",
+      "coordinates": [
+        15.18,
+        -61.24
+      ]
+    },
+    {
+      "name": "djibouti",
+      "country": "DJ",
+      "coordinates": [
+        11.35,
+        43.09
+      ]
+    },
+    {
+      "name": "copenhagen",
+      "country": "DK",
+      "coordinates": [
+        55.4,
+        12.35
+      ]
+    },
+    {
+      "name": "road town",
+      "country": "VG",
+      "coordinates": [
+        18.27,
+        -64.37
+      ]
+    },
+    {
+      "name": "berlin",
+      "country": "DE",
+      "coordinates": [
+        52.31,
+        13.24
+      ]
+    },
+    {
+      "name": "sanaa",
+      "country": "YE",
+      "coordinates": [
+        15.21,
+        44.12
+      ]
+    },
+    {
+      "name": "algiers",
+      "country": "DZ",
+      "coordinates": [
+        36.45,
+        3.03
+      ]
+    },
+    {
+      "name": "washington, dc",
+      "country": "US",
+      "coordinates": [
+        38.53,
+        -77.02
+      ]
+    },
+    {
+      "name": "montevideo",
+      "country": "UY",
+      "coordinates": [
+        -34.53,
+        -56.11
+      ]
+    },
+    {
+      "name": "mamoudzou",
+      "country": "YT",
+      "coordinates": [
+        -12.46,
+        45.13
+      ]
+    },
+    {
+      "name": "beirut",
+      "country": "LB",
+      "coordinates": [
+        33.52,
+        35.3
+      ]
+    },
+    {
+      "name": "castries",
+      "country": "LC",
+      "coordinates": [
+        14.01,
+        -61
+      ]
+    },
+    {
+      "name": "vientiane",
+      "country": "LA",
+      "coordinates": [
+        17.58,
+        102.36
+      ]
+    },
+    {
+      "name": "funafuti",
+      "country": "TV",
+      "coordinates": [
+        -8.3,
+        179.12
+      ]
+    },
+    {
+      "name": "taipei",
+      "country": "TW",
+      "coordinates": [
+        25.03,
+        121.3
+      ]
+    },
+    {
+      "name": "port-of-spain",
+      "country": "TT",
+      "coordinates": [
+        10.39,
+        -61.31
+      ]
+    },
+    {
+      "name": "ankara",
+      "country": "TR",
+      "coordinates": [
+        39.56,
+        32.52
+      ]
+    },
+    {
+      "name": "colombo",
+      "country": "LK",
+      "coordinates": [
+        6.56,
+        79.51
+      ]
+    },
+    {
+      "name": "vaduz",
+      "country": "LI",
+      "coordinates": [
+        47.08,
+        9.31
+      ]
+    },
+    {
+      "name": "riga",
+      "country": "LV",
+      "coordinates": [
+        56.57,
+        24.06
+      ]
+    },
+    {
+      "name": "nuku'alofa",
+      "country": "TO",
+      "coordinates": [
+        -21.08,
+        -175.12
+      ]
+    },
+    {
+      "name": "vilnius",
+      "country": "LT",
+      "coordinates": [
+        54.41,
+        25.19
+      ]
+    },
+    {
+      "name": "luxembourg",
+      "country": "LU",
+      "coordinates": [
+        49.36,
+        6.07
+      ]
+    },
+    {
+      "name": "monrovia",
+      "country": "LR",
+      "coordinates": [
+        6.18,
+        -10.48
+      ]
+    },
+    {
+      "name": "maseru",
+      "country": "LS",
+      "coordinates": [
+        -29.19,
+        27.29
+      ]
+    },
+    {
+      "name": "bangkok",
+      "country": "TH",
+      "coordinates": [
+        13.45,
+        100.31
+      ]
+    },
+    {
+      "name": "",
+      "country": "TF",
+      "coordinates": [
+        -37.5,
+        77.32
+      ]
+    },
+    {
+      "name": "lome",
+      "country": "TG",
+      "coordinates": [
+        6.08,
+        1.13
+      ]
+    },
+    {
+      "name": "n'djamena",
+      "country": "TD",
+      "coordinates": [
+        12.06,
+        15.02
+      ]
+    },
+    {
+      "name": "grand turk",
+      "country": "TC",
+      "coordinates": [
+        21.28,
+        -71.08
+      ]
+    },
+    {
+      "name": "tripoli",
+      "country": "LY",
+      "coordinates": [
+        32.53,
+        13.1
+      ]
+    },
+    {
+      "name": "vatican city",
+      "country": "VA",
+      "coordinates": [
+        41.54,
+        12.27
+      ]
+    },
+    {
+      "name": "kingstown",
+      "country": "VC",
+      "coordinates": [
+        13.09,
+        -61.14
+      ]
+    },
+    {
+      "name": "abu dhabi",
+      "country": "AE",
+      "coordinates": [
+        24.28,
+        54.22
+      ]
+    },
+    {
+      "name": "andorra la vella",
+      "country": "AD",
+      "coordinates": [
+        42.3,
+        1.31
+      ]
+    },
+    {
+      "name": "saint john's",
+      "country": "AG",
+      "coordinates": [
+        17.07,
+        -61.51
+      ]
+    },
+    {
+      "name": "kabul",
+      "country": "AF",
+      "coordinates": [
+        34.31,
+        69.11
+      ]
+    },
+    {
+      "name": "the valley",
+      "country": "AI",
+      "coordinates": [
+        18.13,
+        -63.03
+      ]
+    },
+    {
+      "name": "charlotte amalie",
+      "country": "VI",
+      "coordinates": [
+        18.21,
+        -64.56
+      ]
+    },
+    {
+      "name": "reykjavik",
+      "country": "IS",
+      "coordinates": [
+        64.09,
+        -21.57
+      ]
+    },
+    {
+      "name": "tehran",
+      "country": "IR",
+      "coordinates": [
+        35.4,
+        51.25
+      ]
+    },
+    {
+      "name": "yerevan",
+      "country": "AM",
+      "coordinates": [
+        40.1,
+        44.3
+      ]
+    },
+    {
+      "name": "tirana",
+      "country": "AL",
+      "coordinates": [
+        41.19,
+        19.49
+      ]
+    },
+    {
+      "name": "luanda",
+      "country": "AO",
+      "coordinates": [
+        -8.5,
+        13.14
+      ]
+    },
+    {
+      "name": "willemstad",
+      "country": "AN",
+      "coordinates": [
+        12.06,
+        -68.56
+      ]
+    },
+    {
+      "name": "",
+      "country": "AQ",
+      "coordinates": [
+        -90,
+        0
+      ]
+    },
+    {
+      "name": "",
+      "country": "AP",
+      "coordinates": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "pago pago",
+      "country": "AS",
+      "coordinates": [
+        -14.16,
+        -170.42
+      ]
+    },
+    {
+      "name": "buenos aires",
+      "country": "AR",
+      "coordinates": [
+        -34.36,
+        -58.4
+      ]
+    },
+    {
+      "name": "canberra",
+      "country": "AU",
+      "coordinates": [
+        -35.17,
+        149.13
+      ]
+    },
+    {
+      "name": "vienna",
+      "country": "AT",
+      "coordinates": [
+        48.12,
+        16.22
+      ]
+    },
+    {
+      "name": "oranjestad",
+      "country": "AW",
+      "coordinates": [
+        12.31,
+        -70.02
+      ]
+    },
+    {
+      "name": "new delhi",
+      "country": "IN",
+      "coordinates": [
+        28.36,
+        77.12
+      ]
+    },
+    {
+      "name": "dar es salaam",
+      "country": "TZ",
+      "coordinates": [
+        -6.48,
+        39.17
+      ]
+    },
+    {
+      "name": "baku",
+      "country": "AZ",
+      "coordinates": [
+        40.23,
+        49.52
+      ]
+    },
+    {
+      "name": "dublin",
+      "country": "IE",
+      "coordinates": [
+        53.19,
+        -6.14
+      ]
+    },
+    {
+      "name": "jakarta",
+      "country": "ID",
+      "coordinates": [
+        -6.1,
+        106.49
+      ]
+    },
+    {
+      "name": "kiew",
+      "country": "UA",
+      "coordinates": [
+        50.441,
+        30.554
+      ]
+    },
+    {
+      "name": "doha",
+      "country": "QA",
+      "coordinates": [
+        25.17,
+        51.32
+      ]
+    },
+    {
+      "name": "maputo",
+      "country": "MZ",
+      "coordinates": [
+        -25.57,
+        32.35
+      ]
+    }
+  ]
+}
