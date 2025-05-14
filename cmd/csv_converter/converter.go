@@ -11,44 +11,25 @@ import (
 	"sync/atomic"
 )
 
-func parseStruct(job []string) string {
-	return strings.Join(job, "*")
-}
-
 const (
 	workerCount = 4
 	batchSize   = 100
 )
-
-type Converter struct {
-	InputPath      string
-	OutputPath     string
-	ProcessedBytes int64
-	totalSize      int64
-	input          chan []string
-	output         chan string
-	printOut       chan int
-	wg             sync.WaitGroup
-	normalizer     Normalizer
-}
-
-type Task struct {
-	Data []string
-}
 
 func NewConverter(InputPath string,
 	OutputPath string) *Converter {
 	return &Converter{
 		InputPath:  InputPath,
 		OutputPath: OutputPath,
-		input:      make(chan []string, workerCount),
-		output:     make(chan string, workerCount),
+		input:      make(chan *Task, workerCount),
+		output:     make(chan *Task, workerCount),
 		printOut:   make(chan int),
 		normalizer: NewNormalizer(),
 	}
 }
 
 func (c *Converter) Start() error {
+
 	inputFile, err := os.Open(c.InputPath)
 	if err != nil {
 		return err
@@ -68,58 +49,34 @@ func (c *Converter) Start() error {
 
 	c.totalSize = stat.Size()
 
-	worker := func(jobs <-chan []string, results chan<- string) {
-		for {
-			select {
-			case job, ok := <-jobs: // you must check for readable state of the channel.
-				if !ok {
-					return
-				}
-				results <- parseStruct(job)
-			}
-		}
-	}
-
 	for range workerCount {
 		c.wg.Add(1)
 		go func() {
-			// this line will exec when chan `res` processed output at line 107 (func worker: line 71)
 			defer c.wg.Done()
-			worker(c.input, c.output)
+
+			for {
+				select {
+				case task, ok := <-c.input: // you must check for readable state of the channel.
+					if !ok {
+						return
+					}
+					c.output <- c.parseStruct(task)
+				}
+			}
 		}()
 	}
 
-	go func() {
-		scanner := bufio.NewScanner(inputFile)
-		for scanner.Scan() {
-			line := scanner.Text()
-			atomic.AddInt64(&c.ProcessedBytes, int64(len(line)+1))
+	go c.scanFile(inputFile)
 
-			c.input <- strings.Split(line, "\t")
-		}
-		close(c.input) // close jobs to signal workers that no more job are incoming.
-	}()
-
-	go func() {
-		for {
-			done := atomic.LoadInt64(&c.ProcessedBytes)
-			percent := done * 100 / c.totalSize
-			fmt.Printf("\r%3d%% verarbeitet...", percent)
-			if done >= c.totalSize {
-				break
-			}
-		}
-	}()
-
-	go func() {
-		c.wg.Wait()
-		close(c.output) // when you close(res) it breaks the below loop.
-	}()
+	go c.waitForWorkersDone()
 
 	writer := bufio.NewWriter(outputFile)
 
 	for r := range c.output {
-		writer.WriteString(r + "\n")
+		for _, line := range r.Data {
+			writer.WriteString(line + "\n")
+		}
+
 	}
 	writer.Flush()
 
@@ -127,15 +84,85 @@ func (c *Converter) Start() error {
 	return nil
 }
 
+func (c *Converter) scanFile(inputFile *os.File) {
+
+	scanner := bufio.NewScanner(inputFile)
+	task := &Task{Data: make([]string, 0), lock: &sync.Mutex{}}
+	for scanner.Scan() {
+		line := scanner.Text()
+		atomic.AddInt64(&c.ProcessedBytes, int64(len(line)+1))
+		task.Data = append(task.Data, line)
+		if len(task.Data) >= batchSize {
+			c.input <- task
+			task = &Task{Data: make([]string, 0), lock: &sync.Mutex{}}
+		}
+	}
+	if len(task.Data) >= 0 {
+		c.input <- task
+	}
+	close(c.input)
+}
+
+func (c *Converter) parseStruct(task *Task) *Task {
+	defer task.lock.Unlock()
+	task.lock.Lock()
+	result := make([]string, 0)
+	for _, line := range task.Data {
+		columns := strings.Split(line, "\t")
+		if len(columns) < 6 {
+			continue
+		}
+		newcolumns := []string{
+			columns[0],
+			columns[1],
+			c.normalizer.ReplaceStreetSuffixWithMarker(columns[2]),
+			columns[4],
+			columns[6],
+			c.normalizer.NormalizeTokenFromStreet(columns[2]),
+		}
+		newLine := strings.Join(newcolumns, "\t")
+		result = append(result, newLine)
+	}
+	task.Data = result
+	return task
+}
+
+func (c *Converter) GetProgress(listener chan<- int64) {
+	go func() {
+		for {
+			done := atomic.LoadInt64(&c.ProcessedBytes)
+			percent := done * 100 / c.totalSize
+			listener <- percent
+			if done >= c.totalSize {
+				break
+			}
+		}
+		close(listener)
+	}()
+}
+
+func (c *Converter) waitForWorkersDone() {
+	c.wg.Wait()
+	close(c.output) // when you close(res) it breaks the below loop.
+}
+
 func main() {
 	input := flag.String("in", "", "input path and filename. must be a .tsv file")
 	output := flag.String("out", "", "output path and filename. must be a .tsv file")
 	flag.Parse()
 
+	printch := make(chan int64)
 	conv := NewConverter(*input, *output)
-	err := conv.Start()
-	if err != nil {
-		log.Fatal(err)
-	}
 
+	go func() {
+		err := conv.Start()
+		if err != nil {
+			log.Fatal(err)
+		}
+		conv.GetProgress(printch)
+	}()
+
+	for p := range printch {
+		fmt.Printf("\r%3d%% verarbeitet...", p)
+	}
 }

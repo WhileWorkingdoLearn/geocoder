@@ -6,12 +6,7 @@ import (
 	"unicode"
 )
 
-type Normalizer struct {
-	filter         string
-	pattern        string
-	streetSuffixes []string
-	suffixMap      map[string]string
-}
+
 
 func NewNormalizer() Normalizer {
 	suffix := []string{
