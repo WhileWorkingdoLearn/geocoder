@@ -1,10 +1,8 @@
-package main
+package csvconverter
 
 import (
 	"bufio"
-	"flag"
 	"fmt"
-	"log"
 	"os"
 	"strings"
 	"sync"
@@ -144,25 +142,4 @@ func (c *Converter) GetProgress(listener chan<- int64) {
 func (c *Converter) waitForWorkersDone() {
 	c.wg.Wait()
 	close(c.output) // when you close(res) it breaks the below loop.
-}
-
-func main() {
-	input := flag.String("in", "", "input path and filename. must be a .tsv file")
-	output := flag.String("out", "", "output path and filename. must be a .tsv file")
-	flag.Parse()
-
-	printch := make(chan int64)
-	conv := NewConverter(*input, *output)
-
-	go func() {
-		err := conv.Start()
-		if err != nil {
-			log.Fatal(err)
-		}
-		conv.GetProgress(printch)
-	}()
-
-	for p := range printch {
-		fmt.Printf("\r%3d%% verarbeitet...", p)
-	}
 }

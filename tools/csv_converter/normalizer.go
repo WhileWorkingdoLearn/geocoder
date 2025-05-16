@@ -1,12 +1,10 @@
-package main
+package csvconverter
 
 import (
 	"regexp"
 	"strings"
 	"unicode"
 )
-
-
 
 func NewNormalizer() Normalizer {
 	suffix := []string{

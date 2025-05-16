@@ -1,0 +1,71 @@
+{
+    "de":[
+        "strss", 
+        "strs", 
+        "wg", 
+        "gss", 
+        "pltz", 
+        "ll", 
+        "rng", 
+        "chs", 
+        "dm", 
+        "mkt", 
+        "pfd", 
+        "ufr", 
+        "stg"
+    ],
+    "fr": [
+        "r",
+        "bd",
+        "av",
+        "cht",
+        "pl",
+        "all",
+        "imp",
+        "sq",
+        "pnt",
+        "q"
+    ],
+    "es": [
+        "cll",
+        "av",
+        "plz",
+        "psj",
+        "cr",
+        "camn",
+        "ct",
+        "pt"
+    ],
+    "pt": [
+        "r",
+        "av",
+        "pc",
+        "trv",
+        "estrd",
+        "al",
+        "lg"
+    ],
+    "en": [
+        "st",
+        "rd",
+        "av",
+        "blvd",
+        "ln",
+        "ct",
+        "dr",
+        "pl",
+        "sqr",
+        "trl",
+        "pkwy",
+        "way"
+    ],
+    "ru": [
+        "ulc",
+        "prsp",
+        "pl",
+        "pr",
+        "sh",
+        "nab",
+        "b"
+    ]
+}
