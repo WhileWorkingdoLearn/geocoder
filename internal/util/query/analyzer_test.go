@@ -1,7 +1,6 @@
 package utils
 
 import (
-	"fmt"
 	"testing"
 
 	"github.com/WhilCodingDoLeanr/iam_geocoder/internal/config"
@@ -40,9 +39,9 @@ func TestAnalyzer(t *testing.T) {
 	adressParser := NewAddressParser(cfg)
 	e1 := "lt mnzr strss 15 frnkfrt"
 	scoresDe := adressParser.DetectStreets(e1, "de")
-	fmt.Println(scoresDe)
-	scoresFr := adressParser.DetectStreets(e1, "fr")
-	fmt.Println(scoresFr)
 	assert.Greater(t, len(scoresDe), 100)
+	scoresFr := adressParser.DetectStreets(e1, "fr")
+
+	assert.Greater(t, len(scoresFr), 100)
 
 }

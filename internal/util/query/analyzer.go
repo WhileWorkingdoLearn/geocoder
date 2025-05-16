@@ -7,31 +7,6 @@ import (
 	"github.com/WhilCodingDoLeanr/iam_geocoder/internal/config"
 )
 
-func removeVowels(s string) string {
-	vokale := "aeiouäöüAEIOUÄÖÜ"
-	return strings.Map(func(r rune) rune {
-		if strings.ContainsRune(vokale, r) {
-			return -1
-		}
-		return r
-	}, s)
-}
-
-func normalizeToken(s string) string {
-	s = strings.ToLower(s)
-	replacements := map[string]string{
-		"ä": "ae", "ö": "oe", "ü": "ue", "ß": "ss",
-	}
-	for old, newVal := range replacements {
-		s = strings.ReplaceAll(s, old, newVal)
-	}
-	return s
-}
-
-func normalizeAndReduce(s string) string {
-	return removeVowels(normalizeToken(s))
-}
-
 func NewAddressParser(cfg config.SuffixConfig) *AddressParser {
 	return &AddressParser{
 		streetSuffixes: cfg,
@@ -63,12 +38,14 @@ func (p *AddressParser) DetectStreets(input string, country string) []Detection 
 	if len(tokens) == 0 {
 		return nil
 	}
+
 	n := len(tokens)
 	var results []Detection
 
 	for size := p.MaxNGram; size >= 1; size-- {
 		for i := 0; i <= n-size; i++ {
 			ngram := tokens[i : i+size]
+			fmt.Println(ngram)
 			score, reason := p.scoreStreetNGram(ngram, country)
 			if score >= 6 {
 				results = append(results, Detection{
